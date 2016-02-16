@@ -1,6 +1,9 @@
 class WordsController < ApplicationController
- def index
-    @words = Word.all
+  def index
+    respond_to do |format|
+      format.html
+      format.json { render json: WordsDatatable.new(view_context) }
+    end
   end
 
   def new
