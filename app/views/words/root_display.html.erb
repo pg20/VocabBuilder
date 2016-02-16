@@ -1,0 +1,11 @@
+<p>
+  <% @grouped_words.each do |root, words| %>
+     <%= root.capitalize %>
+     <p>
+        <% words.each do |word| %>
+          <%= word.name %><br>
+        <% end %>
+     </p>
+  <% end %>
+</p>
+~        

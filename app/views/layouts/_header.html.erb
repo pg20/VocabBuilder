@@ -1,0 +1,12 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "Vocab Builder", words_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Context Wise Display", words_path %></li>
+        <li><%= link_to "Rootwise Display",    root_display_words_path %></li>
+        <li><%= link_to "Letter Wise Display", letter_display_words_path %></li>
+      </ul>
+    </nav>
+  </div>
+</header>

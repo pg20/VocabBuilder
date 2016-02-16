@@ -1,0 +1,39 @@
+<% provide(:title, "Edit Word") %>
+<h1>Update Word</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@word) do |f| %>
+      <%= render 'error_messages' %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+
+      <%= f.label :meaning %>
+      <%= f.text_field :meaning, class: 'form-control' %>
+
+      <%= f.label :sentence %>
+      <%= f.text_field :sentence, class: 'form-control' %>
+
+      <%= f.label :synonym %>
+      <%= f.text_field :synonym, class: 'form-control' %>
+     
+       <%= f.label :context, "Context" %>
+      <%= f.text_field :context, class: 'form-control' %>
+
+      <%= f.label :root %>
+      <%= f.text_field :root, class: 'form-control' %>
+
+      <%= f.submit "Save changes", class: "btn btn-primary" %>
+    <% end %>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+

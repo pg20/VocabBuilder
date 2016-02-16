@@ -1,0 +1,29 @@
+<% provide(:title, 'Add Word In Dictionary') %>
+<h1>Add Word In Dictionary</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@word) do |f| %>
+      <%= f.label :word %>
+      <%= f.text_field :name %>
+
+      <%= f.label :meaning %>
+      <%= f.text_field :meaning %>
+     
+      <%= f.label :sentence %>
+      <%= f.text_field :sentence %>
+     
+      <%= f.label :synonym %>
+      <%= f.text_field :synonym %>
+
+      <%= f.label :context %>
+      <%= f.text_field :context %>
+
+      <%= f.label :root, "Root Meaning" %>
+      <%= f.text_field :root %>
+
+      <%= f.submit "Create Word", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+

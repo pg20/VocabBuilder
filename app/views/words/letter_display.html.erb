@@ -1,0 +1,10 @@
+<p>
+  <% @grouped_words.each do |initial_letter, words| %>
+     <%= initial_letter %>
+     <p>
+        <% words.each do |word| %>
+          <%= word.name %><br>
+        <% end %>
+     </p>
+  <% end %>
+</p>
